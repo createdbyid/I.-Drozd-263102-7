@@ -1,0 +1,273 @@
+body{
+    background-color:#344E41    ;
+    font-family: 'Roboto', sans-serif;
+    color:#344E41;
+}
+#logo{
+   width:100%; 
+}
+#logo-img{
+    width:100%;
+}
+#main{
+    margin-top:100px;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#A3B18A;
+    margin-bottom:30px;
+}
+
+
+
+header{
+    display:grid;
+    grid-template-columns:1fr 3fr;
+    background-color:#DAD7CD;
+    height:70px;
+    font-size:1.2em;
+    position:fixed;
+    top:0px;
+    left: 0px;
+    width:100%;
+}
+#logo-header{
+    width:25%;
+}
+#logo-header-img{
+    height:70px;
+    width:auto;
+}
+#nav{
+    width:auto;
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    margin-left: auto;
+    height:inherit;
+    margin-bottom: auto;
+}
+.navig{
+    margin-right:20px;
+    text-decoration: none;
+
+} 
+
+article{
+    width:90%;
+    height:80%;
+    margin:auto;
+    padding-bottom:20px;
+}
+a{
+color:#344E41;
+text-decoration:none;
+}
+a:hover{
+    color:#DAD7CD;
+    background-color:#344E41;
+}
+#us{
+    display:grid;
+    grid-template-columns: 35% 55%;
+    gap:10%;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+#catalog{
+    display:grid;
+    grid-template-columns: 45% 45%;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-right:auto;
+    margin-left:auto;
+    gap:10%;
+}
+#image-content{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#image{
+max-width:100%;
+max-height:90%;
+}
+#pluses{
+    margin-top:20px;
+    margin-bottom:20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:15px;
+}
+.plus{
+    margin-right:10px;
+    margin-left:10px;
+    background-color: #DAD7CD;
+    text-align:center;
+    padding:5%;
+    border-radius:30px;
+
+}
+h1{ text-align:center;}
+h2{
+    margin-bottom:0;
+}
+footer{
+    background-color:#DAD7CD;
+    height:auto;
+    padding:10px;
+    width:auto;
+    left:0;
+    bottom:0;
+}
+
+#conts{
+    display:grid;
+    grid-template-rows:repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin-right:auto;
+    margin-left:auto;
+    gap:15px;
+    text-align:center;
+}
+#button{
+    font-size:1.1em;
+    background-color: #344E41;
+    text-align:center;
+    border-radius:15px;
+    padding:10px;
+    margin-top:10px;
+}
+#button a{
+    color:#DAD7CD;
+}
+#post-text{
+    text-align:center;
+    font-size:0.9em;
+    padding:0;
+}
+.contact-icon{
+    text-align:center;
+}
+#logo{
+    font-size:1.3em;
+    color:#344E41;
+    text-align:center;
+
+}
+#logo-header{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+@media (max-width:1920px){
+    body{
+        font-size:20px;
+    }
+    
+    }
+
+@media (max-width:1440px){
+    body{
+    font-size:18px;
+}
+
+}
+
+@media (max-width:1024px){
+    body{
+        font-size:16px;
+    }
+}
+
+@media (max-width:768px){
+    body{
+        font-size:14px;
+    }
+    #us{
+        display:flex;
+        flex-direction:column;
+        margin-bottom:30px;
+    
+    }
+    #catalog{
+        display:flex;
+        flex-direction:column;
+        margin-bottom:30px;
+        margin-right:auto;
+        margin-left:auto;
+        gap:20px;
+    }  
+    #catalog-text{
+        margin-bottom: 15px;
+    }
+    #pluses{
+        margin-top:20px;
+        margin-bottom:20px;
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: none;
+        gap:15px;
+    }
+    #us_headtxt{
+        margin:15px;
+    }
+    #nav{
+        width:auto;
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        list-style-type: none;
+        position: absolute;
+        right: 0;
+        margin-bottom:5px;
+        margin-left: auto;
+        height:auto;
+        row-gap:5px;
+    }
+    header{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    
+}
+@media (max-width:600px){
+    header{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+    #logo-header{
+        width:60%;
+    }
+
+}
+@media (max-width:400px){
+    body{
+        font-size:12px;
+    }
+    #conts{
+        display:grid;
+        grid-template-rows:repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        margin-right:auto;
+        margin-left:auto;
+        gap:15px;
+        text-align:center;
+    }
+}
+@media (max-width:280px){
+    #conts{
+        display:grid;
+        grid-template-rows:repeat(6, 1fr);
+        grid-template-columns:none;
+        margin-right:auto;
+        margin-left:auto;
+        gap:15px;
+        text-align:center;
+    }
+}
